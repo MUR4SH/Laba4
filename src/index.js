@@ -26,7 +26,7 @@ class Main extends React.Component {
               <input id='rub' type="text" placeholder="Рубли"/>
               <input id="dol" type="text" placeholder="Доллары" disabled value={this.state.dol}/>          
             </div>
-            <button className="convert" onClick={()=> 123}>Конвертировать</button>  
+            <button className="convert" onClick={()=> this.convert()}>Конвертировать</button>  
           </div>
       </div>
     );
