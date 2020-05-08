@@ -14,8 +14,8 @@
     "uuid": "^8.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "start": "node ./server.js",
     "test": "npm run cy:run --spec 'cypress/integration/test.js'",
     "lint": "eslint ./src/*.{js,jsx}",
     "eject": "react-scripts eject",
@@ -43,6 +43,9 @@
   "license": "ISC",
   "keywords": [],
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
     "cypress": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
