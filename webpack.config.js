@@ -7,11 +7,17 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "bundle.js"
   },
+  mode: "development",
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        loader: "babel", 
+        query:
+        {
+            presets:['react']
+        },
         use: ["babel-loader"]
       },
       {
