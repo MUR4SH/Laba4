@@ -14,10 +14,10 @@
     "uuid": "^8.0.0"
   },
   "scripts": {
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "start": "node ./server.js",
     "test": "npm run cy:run --spec 'cypress/integration/test.js'",
-    "lint": "eslint ./src/*.{js,jsx}",
+    "lint": "eslint ./src --fix",
     "eject": "react-scripts eject",
     "cypress": "cypress open",
     "cy:run": "cypress run"
@@ -43,16 +43,13 @@
   "license": "ISC",
   "keywords": [],
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-loader": "^8.1.0",
     "cypress": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "webpack-cli": "^3.3.11"
   }
 }

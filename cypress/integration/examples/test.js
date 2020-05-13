@@ -5,14 +5,14 @@ describe('Super tests', function(){
           .type('qwerty')
         cy.get('button').click()
         cy.get('#dol')
-          .should('have.value','')
+          .should('have.value',' ')
         
         cy.get('#rub')
           .clear()
           .type('-1546')
         cy.get('button').click()
         cy.get('#dol')
-          .should('have.value','')
+          .should('have.value',' ')
     })
     it('2nd test', function(){
         cy.visit('http://localhost:3000/')
